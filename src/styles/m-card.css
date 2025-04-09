@@ -1,0 +1,25 @@
+.card-img {
+    width: 292px;
+    height: 165px;
+}
+
+.card-tag {
+    background-color: #D89E1C;
+    padding: 3px 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+}
+
+.container-card {
+    display: flex;
+    gap: 10px;
+}
+
+.title-card {
+
+    font-size: 28px;
+
+}
