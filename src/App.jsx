@@ -1,14 +1,11 @@
-import React from 'react'
-import MCard from './components/m-carc'; 
+import React from "react";
+import MCard from "./components/m-carc";
+import "./App.css";
 const App = () => {
   return (
     <>
-    <body> 
-
-      <MCard/>
-    </body>
+      <MCard />
     </>
-  )
-}
+  );
+};
 export default App;
-
