@@ -1,10 +1,13 @@
 import React from "react";
-import MCard from "./components/m-carc";
+
 import "./App.css";
+import Header from "./components/header";
+import MainRouter from "./router/mainRouter";
 const App = () => {
   return (
     <>
-      <MCard />
+      <Header />
+      <MainRouter />
     </>
   );
 };

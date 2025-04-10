@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/m-card.css";
 const Mcard = () => {
   const arr = [
     {
+      new: true,
       title: "Thịnh Hành",
       img: [
         "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2024/12/16/t2p6o82g_1920x1080-nhungkequansat_296_168.webp",
@@ -11,6 +12,7 @@ const Mcard = () => {
       ],
     },
     {
+      new: true,
       title: "Mới Nhất",
       img: [
         "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2025/04/02/ws60io53_1920x1080-jedgar_296_168.webp",
@@ -19,6 +21,7 @@ const Mcard = () => {
       ],
     },
     {
+      new: false,
       title: "Cuộc Xâm lăng Của binh đoàn Robot",
       img: [
         "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2025/04/02/cvb6oz2i_1920x1080-bumblebee_296_168.webp",
@@ -27,9 +30,10 @@ const Mcard = () => {
       ],
     },
   ];
+  const filterDara = arr.filter((item) => item.new);
   return (
     <>
-      {arr.map((item, index) => {
+      {filterDara.map((item, index) => {
         return (
           <>
             <h3 className="title-card">{item.title}</h3>
