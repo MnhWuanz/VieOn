@@ -1,12 +1,12 @@
 import React from 'react'
-import MCard from './components/m-carc'; 
+import MainRouter from './routers/mainRouter';
+import "./App.css";
+import Header  from './components/header';
 const App = () => {
   return (
     <>
-    <body> 
-
-      <MCard/>
-    </body>
+      <Header/>
+      <MainRouter/>
     </>
   )
 }
