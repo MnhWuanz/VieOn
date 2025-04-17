@@ -1,4 +1,8 @@
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
 }
