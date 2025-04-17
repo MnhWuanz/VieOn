@@ -1,22 +1,14 @@
-<<<<<<< HEAD
-import React,{useState} from 'react'
-import { Link, useNavigate } from 'react-router-dom';
-=======
-import React from "react";
+
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
->>>>>>> de9b82157c8db19a2d4636cb1bae864f5338f1b0
 import "../styles/header.css";
 import Register from '../pages/register';
 const Header = () => {
-<<<<<<< HEAD
   const [isModalOpen, setIsModalOpen] = useState(false);
    const showModal = () => {
      setIsModalOpen(true);
    };
   const listMenu=[
-=======
-  const listMenu = [
->>>>>>> de9b82157c8db19a2d4636cb1bae864f5338f1b0
     {
       label: "Trang chủ",
       url: "/",
@@ -55,20 +47,10 @@ const Header = () => {
         </ul>
       </div>
       <div className="form">
-<<<<<<< HEAD
           <button onClick={()=>{
             navigate("/dang-ky");showModal();
           }}>Đăng ký</button>
           {isModalOpen && (<Register formopen={isModalOpen} setformopen={setIsModalOpen}/>)}
-=======
-        <button
-          onClick={() => {
-            navigate("/dang-ky");
-          }}
-        >
-          Đăng ký
-        </button>
->>>>>>> de9b82157c8db19a2d4636cb1bae864f5338f1b0
       </div>
     </div>
   );

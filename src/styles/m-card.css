@@ -1,24 +1,21 @@
 .m-card-container {
   position: relative;
 }
+
 .card-content {
   cursor: pointer;
 }
+
 .card-img {
-<<<<<<< HEAD
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .content {
-    position: relative;
-    width: 300px;
-    margin: 10px;
-    cursor: pointer;
-=======
-  width: 292px;
-  height: 165px;
->>>>>>> de9b82157c8db19a2d4636cb1bae864f5338f1b0
+  position: relative;
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .card-tag {
@@ -62,28 +59,26 @@
   display: none;
 }
 
-<<<<<<< HEAD
-}
 
 .card-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .card-content {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .hover-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
-=======
+
 .m-card-container:hover .hover-video {
   display: block;
   animation-duration: 0.5s;
@@ -94,4 +89,3 @@
   height: 80%;
   object-fit: cover;
 }
->>>>>>> de9b82157c8db19a2d4636cb1bae864f5338f1b0
