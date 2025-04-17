@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Child = () => {
+const Child = ({ formDataProps, setFormDataProps }) => {
   return (
-    <div>Child</div>
-  )
-}
+    <div>
+      <button onClick={() => setFormDataProps({ child: "abc" })}>Click</button>
+    </div>
+  );
+};
 
-export default Child
+export default Child;
