@@ -6,6 +6,7 @@ import Child from '../pages/Child'
 import Television from '../pages/television';
 import Hbogo from '../pages/hbo-go';
 import Register from '../pages/register';
+import Detailflim from '../pages/detail-flim'
 const MainRouter = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const MainRouter = () => {
         <Route path="/the-thao" element={<Sport/>}/>
         <Route path="/thieu-nhi" element={<Child/>}/>
         <Route path="/dang-ky" element={<Register/>}/>
+        <Route path="/film-detail/:id" element={<Detailflim} />
       </Routes>
     </>
   )
