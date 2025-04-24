@@ -1,8 +1,12 @@
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 html {
     overflow-x: hidden;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
 }
