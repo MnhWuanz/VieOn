@@ -1,0 +1,45 @@
+.swiper-container {
+    width: 100%;
+    /* Đảm bảo container rộng 100% */
+    height: auto;
+}
+
+.swiper-slide {
+    width: auto;
+    /* Đảm bảo mỗi slide có chiều rộng tự động */
+    flex-shrink: 0;
+    /* Đảm bảo các phần tử không bị co lại */
+}
+
+.header {
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title {
+    margin: 0;
+    margin-left: 24px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.hover {}
+
+.show-all {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-10px);
+}
+
+.header:hover .show-all {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+}
+
+.arrow {
+    color: white;
+}

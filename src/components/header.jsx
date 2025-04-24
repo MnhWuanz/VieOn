@@ -1,8 +1,14 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/header.css";
+import Register from '../pages/register';
 const Header = () => {
-  const listMenu = [
+  const [isModalOpen, setIsModalOpen] = useState(false);
+   const showModal = () => {
+     setIsModalOpen(true);
+   };
+  const listMenu=[
     {
       label: "Trang chủ",
       url: "/",
@@ -41,13 +47,10 @@ const Header = () => {
         </ul>
       </div>
       <div className="form">
-        <button
-          onClick={() => {
-            navigate("/dang-ky");
-          }}
-        >
-          Đăng ký
-        </button>
+          <button onClick={()=>{
+           showModal();
+          }}>Đăng ký</button>
+          {isModalOpen && (<Register formopen={isModalOpen} setformopen={setIsModalOpen}/>)}
       </div>
     </div>
   );
