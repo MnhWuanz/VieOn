@@ -8,6 +8,7 @@ import Television from "../pages/television";
 import Hbogo from "../pages/hbo-go";
 import Register from "../pages/register";
 import Detailflim from "../pages/detail-flim";
+import Topic from "../components/topic";
 const MainRouter = () => {
   return (
     <>
@@ -19,7 +20,8 @@ const MainRouter = () => {
         <Route path="/thieu-nhi" element={<Child/>}/>
         <Route path="/dang-ky" element={<Register/>}/>
         <Route path="/film-detail/:id" element={<Detailflim />}/>
-              </Routes>
+        <Route path="/:title" element={<Topic />}/>
+      </Routes>
     </>
   );
 };

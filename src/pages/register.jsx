@@ -22,15 +22,9 @@ const Register = ({formopen,setformopen}) => {
   const handleCancel = () => {
     setformopen(false);
   };
-  const onFinish = values => {
-    console.log('Success:', values);
-  };
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
-  };
   return (
     <>
-      <Modal title="Đăng kí tài khoản" open={formopen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Đăng kí tài khoản" open={formopen} onOk={handleOk} onCancel={handleCancel}  getContainer={false}>
            <input type="text" placeholder='username' name='username' onChange={handeldata} value={formdata.username} /> <br/>
            <input type='password' placeholder='password' name='password' onChange={handeldata} value={formdata.password} /><br />
       </Modal>

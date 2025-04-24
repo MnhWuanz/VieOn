@@ -1,24 +1,23 @@
 
 import React from 'react'
-import Mcard from '../components/m-carc'
-import datafilm from '../json/film-orignal.json'
+import datafilm from '../json/film-orignal-1.json'
+import Flim from '../components/flim'
+import "../styles/flim.css"
 const Home = () => {
+  console.log("Data ở Home:", datafilm)
   return (
-    <div style={{display:"flex",marginTop:"20px",gap:"12"}}>
-      {datafilm.map((item) => (
-      <Mcard
-        key={item.id}
-        vip={item.vip}
-        image={item.image}
-        title={item.title}
-        top={item.top}
-        id={item.id}
-        video={item.video}
-      />
-))}
-    </div>
-  )
-}
+    <>
+      {datafilm.map((item)=>{
+        return(
+          <Flim
+            title={item.title}
+            dataFilm={item.arrayFilm}
+          />
+        )
+      })}
+    </>
+  );
+};
 
 
 export default Home;

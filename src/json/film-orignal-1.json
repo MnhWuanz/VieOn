@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Khoa học viễn tưởng",
+    "arrayFilm": [
+      {
+        "id": 1,
+        "topic": "Khoa học viễn tưởng",
+        "title": "Anh trai say hi",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2025/04/14/fipti1wv_1920x1080_296_168.webp",
+        "video": "https://www.youtube.com/embed/vVc3ZN7F6nc?si=wzbV0FMfzS4IYZK3",
+        "top": 10,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": true,
+        "news":true
+      },
+      {
+        "id": 2,
+        "title": "Nụ cười xuân",
+        "topic": "Khoa học viễn tưởng",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2022/12/07/w90tb07x_1920x10807nucuoixuanm408277d0b0ded8152a8df1c7a62d48cbe_296_168.webp",
+        "video": "https://www.youtube.com/embed/19vgpt_0Daw?si=b_uOSugn3lkzqt58",
+        "top": 8,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": false
+      },
+      {
+        "id": 2,
+        "title": "Nụ cười xuân",
+        "topic": "Khoa học viễn tưởng",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2022/12/07/w90tb07x_1920x10807nucuoixuanm408277d0b0ded8152a8df1c7a62d48cbe_296_168.webp",
+        "video": "https://www.youtube.com/embed/19vgpt_0Daw?si=b_uOSugn3lkzqt58",
+        "top": 8,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": false
+      },
+      {
+        "id": 2,
+        "title": "Nụ cười xuân",
+        "topic": "Khoa học viễn tưởng",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2022/12/07/w90tb07x_1920x10807nucuoixuanm408277d0b0ded8152a8df1c7a62d48cbe_296_168.webp",
+        "video": "https://www.youtube.com/embed/19vgpt_0Daw?si=b_uOSugn3lkzqt58",
+        "top": 8,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": false
+      },{
+        "id": 2,
+        "title": "Nụ cười xuân",
+        "topic": "Khoa học viễn tưởng",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2022/12/07/w90tb07x_1920x10807nucuoixuanm408277d0b0ded8152a8df1c7a62d48cbe_296_168.webp",
+        "video": "https://www.youtube.com/embed/19vgpt_0Daw?si=b_uOSugn3lkzqt58",
+        "top": 8,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": false
+      },{
+        "id": 2,
+        "title": "Nụ cười xuân",
+        "topic": "Khoa học viễn tưởng",
+        "image": "https://static2.vieon.vn/vieplay-image/thumbnail_v4/2022/12/07/w90tb07x_1920x10807nucuoixuanm408277d0b0ded8152a8df1c7a62d48cbe_296_168.webp",
+        "video": "https://www.youtube.com/embed/19vgpt_0Daw?si=b_uOSugn3lkzqt58",
+        "top": 8,
+        "year": "2019",
+        "duration": "2g 5ph",
+        "quality": "Full HD",
+        "vip": false
+      }
+    ]
+  },
+  {
+    "title": "Vương quốc tuổi thơ",
+    "arrayFilm": [
+      {
+        "id": 3,
+        "title": "Mắt biếc",
+        "topic": "Vương quốc tuổi thơ",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZB7C6nIuCy6MdPN0N_P4y9YankzqCmq5UA&s",
+        "video": "https://www.youtube.com/embed/g7xh5PJG-tM",
+        "top": 3,
+        "year": "2020",
+        "duration": "1g 58ph",
+        "quality": "HD",
+        "vip": true
+      },
+      {
+        "id": 4,
+        "title": "Tiệc trăng máu",
+        "topic": "Vương quốc tuổi thơ",
+        "image": "https://i.ytimg.com/vi/hHOKm2ZbTP8/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/kX6V49LzKZU",
+        "top": 4,
+        "year": "2021",
+        "duration": "2g 10ph",
+        "quality": "Full HD",
+        "vip": false
+      },
+      {
+        "id": 8,
+        "title": "Song Lang",
+        "topic": "Vương quốc tuổi thơ",
+        "image": "https://i.ytimg.com/vi/pHsr_ZRyDDo/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/CikAgvY4sls",
+        "top": 7,
+        "year": "2018",
+        "duration": "1g 50ph",
+        "quality": "Full HD",
+        "vip": false
+      },
+      {
+        "id": 9,
+        "title": "Chị Mười Ba",
+        "topic": "Vương quốc tuổi thơ",
+        "image": "https://i.ytimg.com/vi/Y5IFjGEwIJ0/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/WT-pS2_RZtA",
+        "top": 9,
+        "year": "2020",
+        "duration": "1g 55ph",
+        "quality": "HD",
+        "vip": true
+      },
+      {
+        "id": 10,
+        "title": "Ròm",
+        "topic": "Vương quốc tuổi thơ",
+        "image": "https://i.ytimg.com/vi/XRm1P7oGpMQ/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/jhKXqbwDL9s",
+        "top": 2,
+        "year": "2020",
+        "duration": "1g 33ph",
+        "quality": "Full HD",
+        "vip": false
+      }
+    ]
+  },
+
+  {
+    "title": "Xem ngay kẻo lỡ",
+    "arrayFilm": [
+      {
+        "id": 5,
+        "title": "Hai Phượng",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfifvlXV4mzrveAj0q5GbGtnoAGYm6mogDdg&s",
+        "video": "https://www.youtube.com/embed/6a32fJTZY1g",
+        "top": 1,
+        "year": "2019",
+        "duration": "1g 40ph",
+        "quality": "HD",
+        "vip": true
+      },
+      {
+        "id": 6,
+        "title": "Bố già",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://i.ytimg.com/vi/Lz8nvVp3MNE/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/ROKjYvVbdAs",
+        "top": 5,
+        "year": "2021",
+        "duration": "2g",
+        "quality": "Full HD",
+        "vip": true
+      },
+      {
+        "id": 7,
+        "title": "Lật mặt: Nhà có khách",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://i.ytimg.com/vi/JvHqCk3l3UE/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/0Km_pU1Y5bo",
+        "top": 6,
+        "year": "2020",
+        "duration": "1g 45ph",
+        "quality": "HD",
+        "vip": false
+      }
+    ]
+  },
+  {
+    "title": "Sắp phát sóng",
+    "arrayFilm": [
+      {
+        "id": 5,
+        "title": "Hai Phượng",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfifvlXV4mzrveAj0q5GbGtnoAGYm6mogDdg&s",
+        "video": "https://www.youtube.com/embed/6a32fJTZY1g",
+        "top": 1,
+        "year": "2019",
+        "duration": "1g 40ph",
+        "quality": "HD",
+        "vip": true
+      },
+      {
+        "id": 6,
+        "title": "Bố già",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://i.ytimg.com/vi/Lz8nvVp3MNE/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/ROKjYvVbdAs",
+        "top": 5,
+        "year": "2021",
+        "duration": "2g",
+        "quality": "Full HD",
+        "vip": true
+      },
+      {
+        "id": 7,
+        "title": "Lật mặt: Nhà có khách",
+        "topic": "Xem ngay kẻo lỡ",
+        "image": "https://i.ytimg.com/vi/JvHqCk3l3UE/maxresdefault.jpg",
+        "video": "https://www.youtube.com/embed/0Km_pU1Y5bo",
+        "top": 6,
+        "year": "2020",
+        "duration": "1g 45ph",
+        "quality": "HD",
+        "vip": false
+      }
+    ]
+  }
+]

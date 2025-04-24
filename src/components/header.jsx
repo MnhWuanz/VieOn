@@ -48,7 +48,7 @@ const Header = () => {
       </div>
       <div className="form">
           <button onClick={()=>{
-            navigate("/dang-ky");showModal();
+           showModal();
           }}>Đăng ký</button>
           {isModalOpen && (<Register formopen={isModalOpen} setformopen={setIsModalOpen}/>)}
       </div>
