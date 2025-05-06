@@ -20,7 +20,7 @@ const Feedback = () => {
       <h3>Bình luận ngay</h3>
       <div className="list-feedback">
         <ul>
-          {listFeedBack.map((item) => {
+          {listFeedBack?.map((item) => {
             return (
               <>
                 <li>{item}</li>
@@ -41,3 +41,22 @@ const Feedback = () => {
 };
 
 export default Feedback;
+
+/***
+ *props
+ * const [state, setState] = useState(initValue)
+ *
+ * useEffect(() => {}, [state])
+ * cleanCode
+ *   - Api
+    - Axios
+    - Cách test postman
+    - Kiểm thử Api
+    http://localhost:8080
+    https://681a0e551ac1155635079e39.mockapi.io/api/film
+    Create Read Update Delete (CRUD)
+    GET: lấy data
+    POST: Muốn đẩy data
+    PUT: Sửa data
+    DELETE: xóa data
+ */

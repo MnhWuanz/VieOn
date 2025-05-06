@@ -1,35 +1,32 @@
 import React, { useEffect, useState } from "react";
-import dataFilm from "../json/film-orignal.json";
 import "../styles/home.css";
-import dataFilmTest from "../json/film-new.json";
-import datafilm from "../json/film-orignal-1.json";
 import Flim from "../components/flim";
+import { Spin } from "antd";
+import { getFilmService } from "../services/film.service";
 const Home = ({ onAddToList }) => {
-  const functionConvertData = () => {
-    const convertData = dataFilmTest.map((item) => ({
-      topic: item.topic,
-      data: item,
-    }));
-    const filterData = convertData.filter((item) => item.topic);
-    const data = filterData.reduce((acc, cur) => {
-      const { topic, data } = cur;
-      if (!acc[topic]) {
-        acc[topic] = { topic, data: [] };
-      }
-      acc[topic].data.push(data);
-      return acc;
-    }, {});
-    console.log({ data });
-  };
   const [arrayFilm, setArrayFilm] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const fetchDataFilm = () => {
+    setLoading(true);
+    setTimeout(async () => {
+      try {
+        const response = await getFilmService();
+        setArrayFilm(response.data);
+      } catch (error) {
+        alert("Lỗi server");
+        setArrayFilm([]);
+      } finally {
+        setLoading(false);
+      }
+    }, 5000);
+  };
   useEffect(() => {
-    setArrayFilm(dataFilm);
-    functionConvertData();
+    fetchDataFilm();
   }, []);
   return (
     <>
-      <>
-        {datafilm.map((item) => {
+      <Spin spinning={loading}>
+        {arrayFilm.map((item) => {
           return (
             <Flim
               title={item.title}
@@ -38,7 +35,7 @@ const Home = ({ onAddToList }) => {
             />
           );
         })}
-      </>
+      </Spin>
     </>
   );
 };
