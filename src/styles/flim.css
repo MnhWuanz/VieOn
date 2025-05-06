@@ -24,17 +24,18 @@
     margin-left: 24px;
     font-size: 30px;
     text-transform: uppercase;
+    color: white;
 }
 
 .hover {}
 
-.show-all {
+.show_all {
     opacity: 0;
     transition: all 0.5s ease;
     transform: translateX(-10px);
 }
 
-.header:hover .show-all {
+.header:hover .show_all {
     opacity: 1;
     display: block;
     transform: translateX(0);
@@ -42,4 +43,21 @@
 
 .arrow {
     color: white;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+}
+
+.swiper-slide {
+    overflow: visible !important;
+    z-index: auto !important;
+}
+
+.swiper {
+    overflow: visible !important;
+}
+
+.swiper-wrapper {
+    overflow: visible !important;
 }

@@ -1,14 +1,9 @@
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/header.css";
-import Register from '../pages/register';
-const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-   const showModal = () => {
-     setIsModalOpen(true);
-   };
-  const listMenu=[
+
+const Header = ({ numberFlim }) => {
+  const listMenu = [
     {
       label: "Trang chủ",
       url: "/",
@@ -31,9 +26,22 @@ const Header = () => {
     },
   ];
   const navigate = useNavigate();
+  const [user, setuser] = useState(null);
+  useEffect(() => {
+    const storedUse = localStorage.getItem("user");
+    if (storedUse) {
+      setuser(JSON.parse(storedUse));
+    }
+  }, []);
+  const handelLogout = () => {
+    localStorage.removeItem("user");
+    alert("Đăng xuất thành công");
+    setuser(null);
+    navigate("/");
+  };
   return (
     <div className="header-container">
-      <div className="logo">
+      <div className="logo" onClick={() => navigate("/")}>
         <img
           src="https://play-lh.googleusercontent.com/ybWP3ZXnTGMfmZzc--Dt8LsCU8mtTh5VXWBFQU0Jf1225e-OSe-cdjsXXBb-p9BI1rui"
           alt=""
@@ -47,10 +55,22 @@ const Header = () => {
         </ul>
       </div>
       <div className="form">
-          <button onClick={()=>{
-           showModal();
-          }}>Đăng ký</button>
-          {isModalOpen && (<Register formopen={isModalOpen} setformopen={setIsModalOpen}/>)}
+        {user ? (
+          <button onClick={handelLogout}>Đăng xuất</button>
+        ) : (
+          <button onClick={() => navigate("/login")}>Đăng Nhập</button>
+        )}
+      </div>
+      <div className="favortie-flim" onClick={() => navigate("/playlist")}>
+        <div className="img-icon" style={{ width: "50px", height: "50px" }}>
+          <img
+            style={{ width: "100%" }}
+            src="https://cdn-icons-png.flaticon.com/512/5075/5075090.png"
+            alt="Lỗi"
+            srcset=""
+          />
+        </div>
+        <div className="number-tag">{numberFlim}</div>
       </div>
     </div>
   );

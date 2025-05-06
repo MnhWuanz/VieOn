@@ -1,0 +1,33 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.login-container .login-container-on {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 200px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.login-content {
+    margin: 0 auto;
+}
+
+.login-title {
+    color: black;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#basic {
+    text-align: start;
+}

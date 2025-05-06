@@ -5,7 +5,7 @@ const Topic = () => {
     const {title}=useParams();
     const[isdata,setData]=useState({})
     const {state}=useLocation();
-
+    console.log({title})
   return (
     <div>
         <div className="header">

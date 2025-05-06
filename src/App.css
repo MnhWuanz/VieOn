@@ -4,9 +4,24 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: visible !important;
+  position: relative;
+  z-index: 0;
 }

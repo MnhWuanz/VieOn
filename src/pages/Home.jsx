@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import dataFilm from "../json/film-orignal.json";
 import "../styles/home.css";
-import ShowFilm from "../components/show-film";
 import dataFilmTest from "../json/film-new.json";
-const Home = () => {
+import datafilm from "../json/film-orignal-1.json";
+import Flim from "../components/flim";
+const Home = ({ onAddToList }) => {
   const functionConvertData = () => {
     const convertData = dataFilmTest.map((item) => ({
       topic: item.topic,
@@ -27,12 +28,19 @@ const Home = () => {
   }, []);
   return (
     <>
-      {arrayFilm.map((item) => {
-        return <ShowFilm title={item.title} dataFilm={item.arrayFilm} />;
-      })}
+      <>
+        {datafilm.map((item) => {
+          return (
+            <Flim
+              title={item.title}
+              dataFilm={item.arrayFilm}
+              onAddToList={onAddToList}
+            />
+          );
+        })}
+      </>
     </>
   );
 };
-
 
 export default Home;
