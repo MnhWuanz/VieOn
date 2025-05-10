@@ -16,7 +16,6 @@ const Mcard = ({
   positionClass,
   onAddToList,
 }) => {
-  console.log(typeof onAddToList);
   const navigate = useNavigate();
   const [isHover, setisHover] = useState(false);
   return (

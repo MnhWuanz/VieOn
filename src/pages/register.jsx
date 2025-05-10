@@ -37,6 +37,7 @@ const Register = ({ formopen, setformopen }) => {
     try {
       const response = await getUsers();
       setArrayUsers(response.data);
+      console.log(arrayUsers);
     } catch (error) {
       alert(error.message);
     }
@@ -44,6 +45,7 @@ const Register = ({ formopen, setformopen }) => {
   useEffect(() => {
     fetchDataUsers();
   }, []);
+
   const handleDelete = async (id) => {
     const confirm = window.confirm("Bạn có muốn xóa không?");
     if (!confirm) {

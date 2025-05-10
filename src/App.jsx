@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import MainRouter from "./routers/mainRouter";
 import "./App.css";
 import Header from "./components/header";
-import { useLocation } from "react-router-dom";
+import { Router, useLocation } from "react-router-dom";
 const App = () => {
   const location = useLocation();
   const [isNumber, setIsNumber] = useState(0);
   const handelNumber = () => {
     setIsNumber((prev) => prev + 1);
   };
+  const excludedPaths = ["/login", "/register_new"];
   return (
     <>
-      {location.pathname != "/login" && <Header numberFlim={isNumber} />}
+      {!excludedPaths.includes(location.pathname) && (
+        <Header numberFlim={isNumber} />
+      )}
       <MainRouter onAddToList={handelNumber} />
     </>
   );

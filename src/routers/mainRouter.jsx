@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Sport from "../pages/sport";
 import Child from "../pages/Child";
@@ -10,22 +10,114 @@ import Detailflim from "../pages/detail-flim";
 import Topic from "../components/topic";
 import Login from "../pages/login";
 import Playlist from "../pages/playlist";
+import { AnimatePresence } from "framer-motion";
+import AnimatedRouter from "../components/animatedRouter";
+import Register_new from "../pages/register-new";
 const MainRouter = ({ onAddToList }) => {
+  const location = useLocation();
+
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home onAddToList={onAddToList} />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/hbo-go" element={<Hbogo />} />
-        <Route path="/truyen-hinh" element={<Television />} />
-        <Route path="/the-thao" element={<Sport />} />
-        <Route path="/thieu-nhi" element={<Child />} />
-        <Route path="/dang-ky" element={<Register />} />
-        <Route path="/film-detail/:id" element={<Detailflim />} />
-        <Route path="/:title" element={<Topic />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/playlist" element={<Playlist />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route
+            path="/"
+            element={
+              <AnimatedRouter>
+                <Home onAddToList={onAddToList} />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <AnimatedRouter>
+                <Register />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/hbo-go"
+            element={
+              <AnimatedRouter>
+                <Hbogo />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/truyen-hinh"
+            element={
+              <AnimatedRouter>
+                <Television />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/the-thao"
+            element={
+              <AnimatedRouter>
+                <Sport />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/thieu-nhi"
+            element={
+              <AnimatedRouter>
+                <Child />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/dang-ky"
+            element={
+              <AnimatedRouter>
+                <Register />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/film-detail/:id"
+            element={
+              <AnimatedRouter>
+                <Detailflim />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/:title"
+            element={
+              <AnimatedRouter>
+                <Topic />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <AnimatedRouter>
+                <Login />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/playlist"
+            element={
+              <AnimatedRouter>
+                <Playlist />
+              </AnimatedRouter>
+            }
+          />
+          <Route
+            path="/register_new"
+            element={
+              <AnimatePresence>
+                <Register_new />
+              </AnimatePresence>
+            }
+          />
+        </Routes>
+      </AnimatePresence>
     </>
   );
 };
