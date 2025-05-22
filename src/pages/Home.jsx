@@ -4,9 +4,11 @@ import Flim from "../components/flim";
 import { Spin } from "antd";
 import { getFilmService } from "../services/film.service";
 import { motion } from "framer-motion";
+import { useGetUser } from "../hooks/useUser";
 const Home = ({ onAddToList }) => {
   const [arrayFilm, setArrayFilm] = useState([]);
   const [loading, setLoading] = useState(false);
+  const { data, isLoading } = useGetUser();
   const fetchDataFilm = () => {
     setLoading(true);
     setTimeout(async () => {
