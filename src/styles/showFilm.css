@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  margin-left: 24px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.show-all {
+  display: none;
+}
+
+.header:hover .show-all {
+  display: block;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}

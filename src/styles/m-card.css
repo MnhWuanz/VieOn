@@ -1,0 +1,188 @@
+.card-content {
+  cursor: pointer;
+}
+
+.m-card-container {
+  overflow: visible;
+  z-index: 1;
+  position: relative;
+}
+
+.swiper-slide {
+  position: relative;
+  z-index: 0;
+}
+
+.m-card-container:hover {
+  z-index: 1000;
+}
+
+.card-new {
+  position: absolute;
+  bottom: 5px;
+  padding: 3px;
+  color: black;
+  left: 150px;
+
+}
+
+.card-new .new {
+  background-color: green;
+  color: white;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+
+}
+
+.number {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-new span {
+  background-color: white;
+  border-top-right-radius: 5px;
+  padding: 3px;
+  font-weight: bolder;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-tag {
+  background-color: #d89e1c;
+  padding: 3px 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-top {
+  text-align: center;
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  background-color: rgb(7, 226, 7);
+  padding: 3px 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+.hover-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.m-card-container:hover .hover-video {
+  z-index: 2000;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+  pointer-events: auto;
+}
+
+.hover-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.hover-info {
+  z-index: 2;
+  padding: 15px;
+}
+
+.hover-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hover-controls {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  top: 80%;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 28%;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-watch {
+  background-color: white !important;
+  color: black !important;
+}
+
+.hover-meta {
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 220px;
+  height: 120px;
+  z-index: 1;
+  border: none;
+  border-top-left-radius: 8px;
+}
+
+/* --- Animation Keyframe --- */
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,9 @@
+.swiper-container {
+  width: 100%; /* Đảm bảo container rộng 100% */
+  height: auto;
+}
+
+.swiper-slide {
+  width: auto; /* Đảm bảo mỗi slide có chiều rộng tự động */
+  flex-shrink: 0; /* Đảm bảo các phần tử không bị co lại */
+}
